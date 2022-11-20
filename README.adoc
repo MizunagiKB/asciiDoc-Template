@@ -1,0 +1,16 @@
+= asciiDoc Template
+:author: 水凪
+
+asciiDocを使って文章を書き始める際に使用するテンプレートとしての利用を想定しています。
+
+scssの作成には、link:https://marketplace.visualstudio.com/items?itemName=codelios.dartsass[DartJS Sass Compiler and Sass Watcher]を使用しています。
+
+日本語が含まれるasciiDocを生成する場合は以下の様にしてください。
+
+[source,bash]
+$ asciidoctor-pdf -a scripts=cjk -a pdf-theme=default-with-fallback-font
+
+CSSの作成には以下のものを参考にしています。
+
+* https://github.com/asciidoctor/asciidoctor-stylesheet-factory[asciidoctor-stylesheet-factory]
+* https://github.com/kokushin/jpn.css[jpn.css]

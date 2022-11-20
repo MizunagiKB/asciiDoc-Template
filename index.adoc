@@ -1,0 +1,154 @@
+= Sample Title
+:lang: ja
+:doctype: book
+:author: Sample Author
+:toc: left
+:toclevels: 3
+:source-highlighter: highlight.js
+:highlightjsdir: res/theme/css
+:highlightjs-theme: github-dark-custom
+:icons: font
+:stylesdir: res/theme/css
+:stylesheet: adoc-basic.css
+:imagesdir: res/image
+:experimental:
+
+== Sample Section 1
+
+[.lead]
+この段落は、第一段落のスタイル(文字が大きいスタイル)が適用されます。
+
+吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。
+
+'''
+
+=== Sample Section 1.a
+
+NOTE: 脚注段落は補足情報を示すものです。
+段落冒頭のラベルによって脚注の種類を使い分けることができます。
+
+NOTE以外にも下記のような脚注があります。
+
+TIP: チップスを記述します。
+
+IMPORTANT: 重要事項を記述します。
+
+WARNING: 警告を記述します。
+
+CAUTION: 注意を記述します。
+
+==== Sample Section 1.a.x
+
+|===
+|ショートカット|目的
+
+|kbd:[F11]
+|全画面表示
+
+|kbd:[Ctrl+T]
+|新規タブを開く
+
+|kbd:[Ctrl+Shift+N]
+|シークレットウインドウを開く
+
+|kbd:[Ctrl + +]
+|ズーム
+|===
+
+ファイルを保存するにはmenu:File[Save]を選択します。
+
+拡大率をデフォルトに戻すにはmenu:View[Zoom > Reset]を選択します。
+
+完了したら btn:[OK] ボタンを押してください。
+
+ナビゲーターでファイルを選択し、 btn:[開く] をクリックしてください。
+
+==== Sample Section 1.a.y
+
+_The Pragmatic Programmer_ <<prag>> should be required reading for
+all developers.
+
+[bibliography]
+- [[[prag]]] Andy Hunt & Dave Thomas. The Pragmatic Programmer:
+  From Journeyman to Master. Addison-Wesley. 1999.
+- [[[seam]]] Dan Allen. Seam in Action. Manning Publications.
+  2008.
+
+声明その1 footnote:[この声明のついての明確化]
+
+大胆な声明その1 footnoteref:[disclaimer, Opinions are my own.]
+
+大胆な声明その2 footnoteref:[disclaimer]
+
+=== Sample Section 1.b
+
+image::colin-lloyd-hvFOd8DjObI-unsplash.jpg[]
+
++++
+<a href="https://unsplash.com/ja/s/%E5%86%99%E7%9C%9F/motorsports?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>の<a href="https://unsplash.com/@onthesearchforpineapples?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Colin Lloyd</a>が撮影した写真
++++
+
+== Sample Section list
+* aaa
+* bbb
+** bbb.1
+** bbb.2
+* ccc
+
+aaaaaaaaaaaaaaaaaaaa
+
+. aaa
+. bbb
+.. bbb.1
+.. bbb.2
+. ccc
+
+.blockA
+----
+AsciiDocは、Stuart Rackhamが2002年11月にリリースした
+AsciiDocは、DocBookやLaTeXのような専門的な文章を作成するためのもので、
+より簡単な文法で専門的は文章が書けるようにデザインされていた。
+----
+
+.blockB
+====
+AsciiDocは、Stuart Rackhamが2002年11月にリリースした
+AsciiDocは、DocBookやLaTeXのような専門的な文章を作成するためのもので、
+より簡単な文法で専門的は文章が書けるようにデザインされていた。
+====
+
+.blockC
+****
+AsciiDocは、Stuart Rackhamが2002年11月にリリースした
+AsciiDocは、DocBookやLaTeXのような専門的な文章を作成するためのもので、
+より簡単な文法で専門的は文章が書けるようにデザインされていた。
+****
+
+== Sample Section table
+
+[caption=""]
+.Sample Test
+[cols="2,10"]
+|===
+|Head1|Head2
+
+|Data1|Data2
+|Data1|Data2
+|Data1|Data2
+|===
+
+[source,python]
+----
+def main():
+    value = 32
+    print(value, "sdf")
+
+    for n in range(100):
+        pass
+----
+
+----
+aaaa
+----
+
+> aaaa
