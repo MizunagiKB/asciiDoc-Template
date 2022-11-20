@@ -12,6 +12,7 @@
 :stylesheet: adoc-basic.css
 :imagesdir: res/image
 :experimental:
+:stem:
 
 == Sample Section 1
 
@@ -123,6 +124,8 @@ AsciiDocは、Stuart Rackhamが2002年11月にリリースした
 AsciiDocは、DocBookやLaTeXのような専門的な文章を作成するためのもので、
 より簡単な文法で専門的は文章が書けるようにデザインされていた。
 ****
+
+== Sample Section stem
 
 == Sample Section table
 
